@@ -1,0 +1,31 @@
+<header class="metabar">
+  <div class="container-fluid">
+    <a href="/" class="metabar__brand">
+      <img class="metabar__logo" src="/images/logo.png" alt="Jolly">
+    </a>
+    {{#if credentials}}
+      <div class="metabar__nav u-pull-right">
+        <div class="dropdown ">
+          <button class="button metabar__avatar" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            R
+          </button>
+          <div class="dropdown-menu dropdown-menu-right dropdown-menu-pointing" aria-labelledby="dropdownMenu1">
+            <a class="dropdown-item" href="/programs/new">New program</a>
+            <div class="divider"></div>
+            <a class="dropdown-item small" href="/me">Profile</a>
+            <a class="dropdown-item small" href="/me/settings/profile">Settings</a>
+            <a class="dropdown-item small" href="/logout">Logout</a>
+          </div>
+        </div>
+      </div>
+      <div class="menu menu--pointing metabar__menu">
+        <a class="menu-item" href="">Nav Item</a>
+      </div>
+    {{else}}
+      <div class="metabar__nav u-pull-right">
+        <a class="button button-success metabar__button" href="/login">Login</a>
+        <a class="button button-success metabar__button" href="/signup">signup</a>
+      </div>
+    {{/if}}
+  </div>
+</header>

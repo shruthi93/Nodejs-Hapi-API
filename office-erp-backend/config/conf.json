@@ -1,0 +1,63 @@
+{
+    "url": "mongodb://localhost/simbotseed",
+    "settings": {
+        "db": {
+            "native_parser": false
+        }
+    },
+    "apiKey": "52f13749-d89f-450c-b929-0bdbdea29fe4",
+    "constants": {
+        "empID": "empID-58ae76b1b95fe83af3617a8a",
+        "empIdToken": "empID-",
+        "statusSuccess": 0,
+        "statusFailure": 1,
+        "statusNotFound": 404,
+        "unAuth": "Unauthorised Access !",
+        "version": "v1",
+        "machineCode": {
+            "apiKeyErr": "API_KEY_NOT_MATCH",
+            "empCreated": "ADD_EMP_SUCCESS",
+            "empNotFound": "EMP_RECORD_NOT_FOUND",
+            "empFound": "EMP_RECORD_FOUND",
+            "servErr": "SERVER_ERR !",
+            "empUpdated": "UPDATED_EMP_RECORD",
+            "empDeleted": "DELETE_EMP_SUCCESS",
+            "empDeleteErr": "RECORD_NOT_DELETED",
+            "FindEmpRecord": "EMP_RECORD_FOUND_BY_ID",
+            "addOrgErr": "ADD_ORG_FAILED",
+            "orgCreated": "ORG_CREATED",
+            "orgNotFound": "ORG_NOT_FOUND",
+            "orgFound": "ORG_FOUND",
+            "orgUpdated": "UPDATED_ORG_RECORD",
+            "orgDeleted": "DELETE_ORG_SUCCESS",
+            "login": "LOGIN_SUCCESSFULL",
+            "loginErr": "INVALID_USERID_OR_PASSWORD"
+        },
+        "description": {
+            "apiKeyErr": "Api key is not matching",
+            "empCreated": "Successfully created employee",
+            "empNotFound": "Employee record not found",
+            "empFound": "The list of employee record found successfully",
+            "servErr": "Server error !",
+            "empUpdated": "Successfully updated employee record",
+            "empDeleted": "Successfully deleted employee record",
+            "empDeleteErr": "Employee record not deleted",
+            "FindEmpRecord": "Employee record found by Id successfully",
+            "addEmpValidation": "Employee not created due to validation error",
+            "addEmpErr": "Employee creation failed",
+            "addOrgErr": "Failed to add organization",
+            "orgCreated": "Successfully created organization.",
+            "orgNotFound": "Organisation record not found",
+            "orgFound": "Organisation record found",
+            "orgUpdated": "Successfully updated organization record",
+            "orgDeleted": "Successfully deleted organization record",
+            "login": "Successfully login",
+            "loginErr": "Invalid userId or password"
+        }
+    },
+    "queryParam": {
+        "empId": "employee_id",
+        "orgId": "organization_id",
+        "emailId": "email_id"
+    }
+}

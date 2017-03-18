@@ -1,0 +1,71 @@
+/* Copyright 2016 Resumite Corporation
+
+button.scss
+Button components configuration. 
+
+Syntax: componentName__<property>[--<modifier>]
+------------------------------------------------------------------------*/
+
+$button__height: $eleHeight--base;
+$button__padding: 0 30px;
+$button__color: $color__foreground--light;
+$button__color--hover: $color__foreground--darker;
+$button__color--active: $color__foreground--darkest;
+$button__borderColor: $color__foreground--lightest;
+$button__borderColor--hover: $color__foreground--lighter;
+$button__fontSize: $fontSize--small;
+$button__fontWeight: $fontWeight--thick;
+$button__letterSpacing: $letterSpacing--normal;
+
+/* Buttons
+---------------------------------------------*/
+
+.button {
+    font-size: $button__fontSize;
+    font-weight: $button__fontWeight;
+    line-height: $button__height;
+    display: inline-block;
+    height: $button__height;
+    padding: $button__padding;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none;
+    letter-spacing: $button__letterSpacing;
+    text-transform: uppercase;
+    color: $button__color;
+    border: 1px solid $button__borderColor;
+    border-radius: $borderRadius--base;
+    background-color: transparent;
+}
+
+.button:hover,
+.button:focus {
+    color: $button__color--hover;
+    border-color: $button__borderColor--hover;
+    outline: 0;
+}
+
+.button.button--primary {
+    color: #fff;
+    border-color: $color__accent;
+    background-color: $color__accent;
+}
+
+.button.button--primary:hover,
+.button.button--primary:focus {
+    border-color: $color__accent--dark;
+    background-color: $color__accent--dark;
+}
+
+.button.button--error {
+    color: #fff;
+    border-color: $color__error;
+    background-color: $color__error;
+}
+
+.button.button--error:hover,
+.button.button--error:focus {
+    border-color: $color__error--dark;
+    background-color: $color__error--dark;
+}
